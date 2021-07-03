@@ -11,6 +11,9 @@ Secciones(artículos): son tres secciones nombrando las ramas principales de la 
 Contacto: sección para que los clientes nos puedan contactar directamente.
 Footer: sección para redes sociales.
 
+Para entrar a la página se puede acceder mediante el siguiente link:
+https://aabarca7.github.io./
+
 Notas: El prototipo se hizo 2 veces ya que conforme se fue agregando contenido se vio la necesidad de modificase para adaptarse a las necesidades del cliente.
 Hay cosas que se pueden hacer de mejor manera como el menú con boostrap, pero se decidió utilizar solo html y css para practicar lo aprendido durante la unidad.
 La sección de registro se cambió por la de contacto ya que siento que sería de más provecho para la empresa, pero se podría modificar sin problemas.
