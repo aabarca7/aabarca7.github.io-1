@@ -1,0 +1,427 @@
+/* inicio Estilos generales */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none
+}
+
+
+/* cierre Estilos generales */
+
+
+/* inicio header */
+
+.respmenu a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #456789;
+    max-width: 200px;
+    background: #234567;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+}
+
+.respmenu input[type="checkbox"],
+.respmenu .fa-bars,
+.respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+}
+
+.respmenu .fa-bars,
+.respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+}
+
+.respmenu input[type="checkbox"] {
+    opacity: 0;
+}
+
+.respmenu {
+    color: white;
+    position: relative;
+    background: #123456;
+    min-height: 48px;
+}
+
+.respmenu nav {
+    display: none;
+}
+
+.respmenu ul {
+    margin-block-end: 0;
+}
+
+.respmenu input:checked~nav {
+    display: block;
+}
+
+.respmenu input:checked~.fa-bars {
+    display: none;
+}
+
+.respmenu input:not(:checked)~.fa-times {
+    display: none;
+}
+
+
+/* fin header*/
+
+
+/* inicio jumbotron */
+
+#jumbotron {
+    padding: 9em 0 9em 0;
+    background-color: #4686a0;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed, fixed, fixed;
+    background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+#jumbotron a {
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+#jumbotron a:hover {
+    color: #ffffff;
+}
+
+#jumbotron h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+#jumbotron p {
+    margin: 1em 0 0 0;
+}
+
+#jumbotron .inner {
+    position: relative;
+}
+
+#jumbotron .action {
+    padding-top: 3em;
+}
+
+#jumbotron .button {
+    background-color: transparent;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: inset 0 0 0 1px rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
+    cursor: pointer;
+    display: inline-block;
+    height: 2.75em;
+    letter-spacing: 0.125em;
+    line-height: 2.75em;
+    padding: 0 2em;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0.125em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#jumbotron .button:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+
+/* fin jumbotron */
+
+
+/* inicio secciones */
+
+.main {
+    padding: 6em 1em 4em 0;
+    display: flex;
+}
+
+.main.style1 {
+    background: #fff;
+}
+
+.main.style2 {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed, fixed;
+    background-image: url("images/overlay1.png"), url("images/header.jpg");
+    background-size: auto, cover;
+}
+
+.container {
+    margin: 0 auto;
+    width: 60em;
+    text-align: center;
+}
+
+.container p {
+    text-shadow: 0 0 30px rgb(148, 140, 255);
+}
+
+.row {
+    box-sizing: border-box;
+    align-items: stretch;
+    margin-top: 0;
+    margin-left: -3em;
+    padding: 0 0 0 3em;
+}
+
+.row>* {
+    padding: 0 0 0 3em;
+}
+
+.image {
+    border-radius: 4px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.image.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+
+.image.fit img {
+    width: 100%;
+}
+
+.field {
+    width: 90%;
+    margin: .8em;
+    padding: .5em;
+}
+
+.field2 {
+    margin: .8em;
+    text-decoration: none;
+    padding: .5em;
+    font-weight: 600;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+.field2:hover {
+    color: #1883ba;
+    background-color: #ffffff;
+}
+
+.zoom {
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+
+/* fin secciones */
+
+
+/* inicio footer */
+
+#footer {
+    margin: 0;
+    border: 0;
+    display: block;
+    padding: 3em 2em;
+    background-color: #4686a0;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed, fixed, fixed;
+    background-image: url("./images/overlay2.png"), url("./images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+    text-align: center;
+    color: #ffffff;
+}
+
+#footer li {
+    padding: 0 0 0 1em;
+    vertical-align: middle;
+}
+
+#footer a {
+    color: #ffffff;
+}
+
+#footer .icons {
+    margin: 0;
+}
+
+#footer .copyright {
+    font-size: 0.8em;
+    list-style: none;
+    margin: 2em 0 0 0;
+    padding: 0;
+}
+
+#footer .copyright li {
+    border-left: solid 1px;
+    display: inline-block;
+    line-height: 1em;
+    margin-left: 1em;
+    padding: 0 0 0 1em;
+}
+
+
+/* fin footer*/
+
+
+/*section:not(#name) {
+        border: 1px solid darkorange;
+    }
+    */
+
+.no-margin {
+    margin: 0;
+}
+
+.no-pading {
+    padding: 0;
+}
+
+@media (max-width: 257px) {
+    /* Estos se aplican a menores de 257px */
+    #jumbotron {
+        padding: 3em 1em 3em 1em;
+    }
+    .main {
+        padding: 2em 1em 0.1em 1em;
+    }
+    .container {
+        max-width: calc(100% - 3em);
+    }
+    #footer {
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    /* Estos se aplican a partir de 576px */
+    #jumbotron {
+        padding: 4em 2em 4em 2em;
+    }
+    .main {
+        padding: 2em 1.5em 0.1em 1.5em;
+    }
+    .container {
+        max-width: calc(100% - 3em);
+    }
+    #footer {
+        padding: 2em 1.5em 2em 1.5em;
+    }
+    #footer .copyright {
+        margin: 1.5em 0 0 0;
+    }
+    #footer .copyright li {
+        border: 0;
+        display: block;
+        margin: 1em 0 0 0;
+        padding: 0;
+    }
+    #footer li {
+        display: inline-block;
+        padding: 0 1.25em 0 0;
+    }
+    #jumbotron li {
+        display: inline-block;
+        padding: 0 1.25em 0 0;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Estos se aplican a partir de 768px */
+    #jumbotron {
+        padding: 4em 3em 4em 3em;
+    }
+    .main {
+        padding: 3em 1.5em 1em 1.5em;
+    }
+    .row {
+        display: flex;
+    }
+    .button {
+        height: 3em;
+        line-height: 3em;
+    }
+    .field2 {
+        width: 15%;
+    }
+    #footer {
+        padding: 3em 1.5em 3em 1.5em;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Estos se aplican a partir de 992px */
+    #jumbotron {
+        padding: 8em 3em 8em 3em;
+    }
+    .main {
+        padding: 5em 3em 3em 3em;
+    }
+    .container {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .row {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    #footer {
+        padding: 5em 3em 5em 3em;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Estos se aplican a partir de 1200px */
+    #jumbotron {
+        padding: 5em 0 5em 0;
+        background-attachment: scroll;
+    }
+    /* .main {
+            padding: 4em 0 2em 0 ;
+        }*/
+    .container {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .row {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .row {
+        box-sizing: border-box;
+        align-items: stretch;
+    }
+    #footer {
+        padding: 4em 0 4em 0;
+        background-attachment: scroll;
+    }
+}
